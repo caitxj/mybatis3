@@ -6,6 +6,7 @@
 	<properties resource="helloworld/jdbc.properties"></properties>
 	<typeAliases>
 	<typeAlias type="cc.cai.orm.mybaits3.helloworld.entity.HelloWorld" alias="HelloWorld"/>
+	<typeAlias type="cc.cai.orm.mybaits3.helloworld.entity.CustomerHelloWorld" alias="CustomerHelloWorld"/>
 	</typeAliases>
 	<environments default="development">
 		<environment id="development">

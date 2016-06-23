@@ -3,7 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cc.cai.orm.mybaits3.helloworld.mapper.HelloWorldMapper">
-  <select id="selectBlog" resultType="HelloWorld">
-    select * from hellworld where id = #{id}
+  <select id="selectBlog" resultType="CustomerHelloWorld">
+    select hw.*,p.id as pid,p.name as pname from hellworld hw inner join person p on p.id=hw.id where hw.id = #{id}
   </select>
 </mapper>
